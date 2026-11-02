@@ -1,3 +1,4 @@
+<?php $base = ''; ?>
 <footer class="footer">
     <div class="container">
         <div class="footer-nav">
@@ -31,6 +32,17 @@
             </div>
         </div>
     </div>
+<!--    --><?php
+//    $today = date('d.m.Y');
+//    $newYear = (date('L') ? 366 : 365) - date('z');
+//    if ($newYear % 10 >= 2 && $newYear % 10 <= 4 && ($newYear % 100 < 10 || $newYear % 100 >= 20)) {
+//        $day_word = 'дня';
+//    } else {
+//        $day_word = 'дней';
+//    }
+//    ?>
+<!--    <div class="new-year">-->
+<!--        <p>Сегодня: <b>--><?php //echo $today; ?><!--</b></p>-->
+<!--        <p>До Нового Года: <b>--><?php //echo $newYear; ?><!-- --><?php //echo $day_word; ?><!--</b></p>-->
+<!--    </div>-->
 </footer>
-</body>
-</html>

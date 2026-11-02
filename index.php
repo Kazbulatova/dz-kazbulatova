@@ -55,7 +55,22 @@ require __DIR__ . '/includes/header.php';
                 <div class="promo-badge">20%</div>
                 <div class="promo-text">
                     <h3>СКИДКА НА ПЕРВУЮ ИГРУ</h3>
-                    <p>Скидка 20% на первую игру с ведущим. Действует до 31 мая.</p>
+                    <p>
+                        <?php
+                        $text = "Скидка 20% на первую игру с ведущим. Действует до 31 мая.";
+                        $arr1 = explode(' ', $text);
+                        $arr2 = array();
+                        for ($i = 0; $i < count($arr1); $i++) {
+                            if ($i % 2 === 0) {
+                                $arr2[] = '<span style="color:#90ee90">' . $arr1[$i] . '</span>';
+                            } else {
+                                $arr2[] = '<span style="color:#ffb6c1">' . $arr1[$i] . '</span>';
+                            }
+                        }
+                        $colors = implode(' ', $arr2);
+                        echo $colors;
+                        ?>
+                    </p>
                     <a href="pages/stock.php" class="link-green">ПОДРОБНЕЕ</a>
                 </div>
             </div>
@@ -77,4 +92,29 @@ require __DIR__ . '/includes/header.php';
             </div>
         </div>
     </section>
+    <p>
+    </p>
+<?php
+//$description = 'Настольные игры и квесты';
+//$promotion = 'Скидка 20% на первую игру с ведущим Действует до 31 мая Купи две настольные игры - получи третью в подарок Набор игр + ведущий на 2 час Стоит выгоднее';
+//$questDesc = 'СКОРО! ЭКШН-ИГРА «ОГРАБЛЕНИЕ В ТЕМНОТЕ»! «СЕКРЕТНАЯ КОМНАТА» С ВЕДУЩИМИ «МАФИЯ» С ВЕДУЩИМИ';
+//$page = $description . ' ' . $questDesc . ' ' . $promotion;
+//$register = mb_strtolower($page, 'UTF-8');
+//$vowels = 'аеёиоуыэюя';
+//$vowelsLength = mb_strlen($vowels, 'UTF-8');
+//$vowelsCount = 0;
+//for ($i = 0; $i < $vowelsLength; $i++) {
+//    $currentVowel = mb_substr($vowels, $i, 1, 'UTF-8');
+//    $count = substr_count($register, $currentVowel);
+//    $vowelsCount += $count;
+//}
+//$wordsArr = explode(' ', $page);
+//$wordsCount = count($wordsArr);
+//echo "<div class='bg-gray' style='padding: 20px 0;'>";
+//echo "<div class='container homework-lines'>";
+//echo "<p>Количество гласных на странице: <b>" . $vowelsCount . "</b></p>";
+//echo "<p>Количество слов на странице: <b>" . $wordsCount . "</b></p>";
+//echo "</div>";
+//echo "</div>";
+//?>
 <?php require __DIR__ . '/includes/footer.php'; ?>
