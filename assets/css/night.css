@@ -577,20 +577,20 @@ body {
     color: #e0e0e0;
     margin-bottom: 15px;
 }
-/*.new-year {*/
-/*    max-width: 1140px;*/
-/*    margin: 0 auto;*/
-/*    padding: 15px 20px;*/
-/*}*/
+.new-year {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
 
-/*.new-year p {*/
-/*    margin-bottom: 5px;*/
-/*    font-size: 14px;*/
-/*}*/
+.new-year p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
 
-/*.new-year b {*/
-/*    font-weight: 700;*/
-/*}*/
+.new-year b {
+    font-weight: 700;
+}
 @media (max-width: 1024px) {
     .cards-grid { gap: 20px; }
     .card { width: 280px; }
