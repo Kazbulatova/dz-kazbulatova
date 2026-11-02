@@ -560,23 +560,23 @@ body {
     font-size: 12px;
     margin-top: 10px;
 }
-/*.homework-lines {*/
-/*    font-family: 'Roboto', sans-serif;*/
-/*    text-align: left;*/
-/*}*/
+.homework-lines {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
 
-/*.homework-lines h3 {*/
-/*    color: #333;*/
-/*    margin-top: 0;*/
-/*    margin-bottom: 10px;*/
-/*    font-size: 20px;*/
-/*}*/
+.homework-lines h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
 
-/*.homework-lines p {*/
-/*    font-size: 18px;*/
-/*    color: #e0e0e0;*/
-/*    margin-bottom: 15px;*/
-/*}*/
+.homework-lines p {
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+}
 /*.new-year {*/
 /*    max-width: 1140px;*/
 /*    margin: 0 auto;*/

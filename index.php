@@ -108,13 +108,13 @@ for ($i = 0; $i < $vowelsLength; $i++) {
     $count = substr_count($register, $currentVowel);
     $vowelsCount += $count;
 }
-//$wordsArr = explode(' ', $page);
-//$wordsCount = count($wordsArr);
-//echo "<div class='bg-gray' style='padding: 20px 0;'>";
-//echo "<div class='container homework-lines'>";
-//echo "<p>Количество гласных на странице: <b>" . $vowelsCount . "</b></p>";
-//echo "<p>Количество слов на странице: <b>" . $wordsCount . "</b></p>";
-//echo "</div>";
-//echo "</div>";
-//?>
+$wordsArr = explode(' ', $page);
+$wordsCount = count($wordsArr);
+echo "<div class='bg-gray' style='padding: 20px 0;'>";
+echo "<div class='container homework-lines'>";
+echo "<p>Количество гласных на странице: <b>" . $vowelsCount . "</b></p>";
+echo "<p>Количество слов на странице: <b>" . $wordsCount . "</b></p>";
+echo "</div>";
+echo "</div>";
+?>
 <?php require __DIR__ . '/includes/footer.php'; ?>
