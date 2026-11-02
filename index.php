@@ -95,19 +95,19 @@ require __DIR__ . '/includes/header.php';
     <p>
     </p>
 <?php
-//$description = 'Настольные игры и квесты';
-//$promotion = 'Скидка 20% на первую игру с ведущим Действует до 31 мая Купи две настольные игры - получи третью в подарок Набор игр + ведущий на 2 час Стоит выгоднее';
-//$questDesc = 'СКОРО! ЭКШН-ИГРА «ОГРАБЛЕНИЕ В ТЕМНОТЕ»! «СЕКРЕТНАЯ КОМНАТА» С ВЕДУЩИМИ «МАФИЯ» С ВЕДУЩИМИ';
-//$page = $description . ' ' . $questDesc . ' ' . $promotion;
-//$register = mb_strtolower($page, 'UTF-8');
-//$vowels = 'аеёиоуыэюя';
-//$vowelsLength = mb_strlen($vowels, 'UTF-8');
-//$vowelsCount = 0;
-//for ($i = 0; $i < $vowelsLength; $i++) {
-//    $currentVowel = mb_substr($vowels, $i, 1, 'UTF-8');
-//    $count = substr_count($register, $currentVowel);
-//    $vowelsCount += $count;
-//}
+$description = 'Настольные игры и квесты';
+$promotion = 'Скидка 20% на первую игру с ведущим Действует до 31 мая Купи две настольные игры - получи третью в подарок Набор игр + ведущий на 2 час Стоит выгоднее';
+$questDesc = 'СКОРО! ЭКШН-ИГРА «ОГРАБЛЕНИЕ В ТЕМНОТЕ»! «СЕКРЕТНАЯ КОМНАТА» С ВЕДУЩИМИ «МАФИЯ» С ВЕДУЩИМИ';
+$page = $description . ' ' . $questDesc . ' ' . $promotion;
+$register = mb_strtolower($page, 'UTF-8');
+$vowels = 'аеёиоуыэюя';
+$vowelsLength = mb_strlen($vowels, 'UTF-8');
+$vowelsCount = 0;
+for ($i = 0; $i < $vowelsLength; $i++) {
+    $currentVowel = mb_substr($vowels, $i, 1, 'UTF-8');
+    $count = substr_count($register, $currentVowel);
+    $vowelsCount += $count;
+}
 //$wordsArr = explode(' ', $page);
 //$wordsCount = count($wordsArr);
 //echo "<div class='bg-gray' style='padding: 20px 0;'>";
